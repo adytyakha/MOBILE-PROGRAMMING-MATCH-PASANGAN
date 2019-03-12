@@ -14,17 +14,34 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun Pasangan() {
-        val randomCewe = Random().nextInt (3)+1
-        val randomCowo = Random().nextInt (3)+1
+        val randomCewe = Random().nextInt (5)+1
+        val randomCowo = Random().nextInt (13)+1
         val drawableResCewek = when (randomCewe) {
-            1 -> R.drawable.cewe1
-            2 -> R.drawable.cewek2
-            else -> R.drawable.cewe3
+            1 -> R.drawable.ayu_mobile
+            2 -> R.drawable.faliz_mobile
+            3 -> R.drawable.fuji_mobile
+            4 -> R.drawable.hanum_mobile
+            5 -> R.drawable.mela_mobile
+
+
+            else -> R.drawable.umi_mobile
         }
         val drawableResCowok = when (randomCowo) {
-            1 -> R.drawable.pria1
-            2 -> R.drawable.pria2
-            else -> R.drawable.pia2
+            1 -> R.drawable.deni_mobile
+            2 -> R.drawable.didik_mobile
+            3 -> R.drawable.edi_mobile
+            4 -> R.drawable.eggy_mobile
+            5 -> R.drawable.fanji_mobile
+            6 -> R.drawable.faqih_mobile
+            7 -> R.drawable.filipus_mobile
+            8 -> R.drawable.hafid_mobile
+            9 -> R.drawable.harris_mobile
+            10 -> R.drawable.huda_mobile
+            11-> R.drawable.iav_mobile
+            12 -> R.drawable.kiki_mobile
+            13-> R.drawable.luhur_mobile
+
+            else -> R.drawable.riki_mobile
         }
         ivdadu1.setImageResource(drawableResCewek)
         ivdadu2.setImageResource(drawableResCowok)
